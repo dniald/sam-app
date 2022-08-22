@@ -31,7 +31,7 @@ exports.lambdaHandler = async (_event, _context) => {
  
     return {
       statusCode: 200,
-      body: JSON.stringify(quotes, "Update through Git Actions"),
+      body: JSON.stringify(quotes),
     };
   } catch (err) {
     console.log(err);
