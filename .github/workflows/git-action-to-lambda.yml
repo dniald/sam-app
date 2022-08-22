@@ -23,7 +23,7 @@ jobs:  #Workflow run is made up of one or more jobs
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ap-southeast-1 #--> Define Region of the AWS-CLI 
       - name: npm install
-        working-directory: ./hello-world
+        working-directory: hello-world
         env:
           CI: true
         run: |
